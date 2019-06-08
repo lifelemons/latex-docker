@@ -1,3 +1,22 @@
+# Modified to TeX Live 2019
+
+Build Full Tex Live image:
+
+```bash
+cd latex-docker
+cp Dockerfile.basic Dockerfile
+docker build -t latex:basic .
+cp Dockerfile.full Dockerfile
+docker build -t latex .
+
+# Run image examples
+# Windows 
+docker run -it -v s:/projects:/root latex bash 
+```
+
+
+-----
+
 Latex docker container [![Docker hub](https://img.shields.io/docker/pulls/blang/latex.svg)](https://hub.docker.com/r/blang/latex/)
 ======================
 
