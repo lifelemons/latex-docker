@@ -10,6 +10,10 @@ cp Dockerfile.full Dockerfile
 docker build -t latex .
 
 # Run image examples
+
+# Mac
+docker run -it -v ~:/root/$USER latex bash
+
 # Windows 
 docker run -it -v s:/projects:/root latex bash 
 ```
