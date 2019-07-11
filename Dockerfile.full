@@ -2,3 +2,6 @@ FROM latex:basic
 MAINTAINER Benedikt Lang <mail@blang.io>
 
 RUN tlmgr install scheme-full
+
+VOLUME ["/data"]
+WORKDIR /data
